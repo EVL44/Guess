@@ -7,7 +7,6 @@
 }
 
 .container {
-    border: 1px solid black;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -16,7 +15,6 @@
 }
 
 .footer {
-    border: 1px solid black;
     height: 9.5vh;
     display: flex;
     justify-content: center;
@@ -25,7 +23,6 @@
 }
 
 .login {
-    border: 1px solid black;
     background: #ffffff;
     display: flex;
     flex-direction: column;
@@ -111,4 +108,21 @@
     font-family: "Kanit", sans-serif;
     color: rgb(68, 140, 212);
     border: 1px solid rgb(68, 140, 212);
+}
+
+@media (max-width: 768px) {
+    .login {
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login h1 {
+        font-size: large;
+    }
+
+    .input-f {
+        width: 100%;
+    }
 }

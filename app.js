@@ -20,7 +20,6 @@ function signup(event) {
 
     let data = { username, email, password : hashedPassword}
     localStorage.setItem("userData",JSON.stringify(data));
-    alert(" sign up done successfuly!");
     window.location.assign("login.html");
 }
 
@@ -44,7 +43,6 @@ function login(event) {
 
     // Check credentials
     if (checkUsername === userData.username && checkPassword === dehashedpass) {
-        alert("Login successful!");
         window.location.assign("./game.html");
     } else {
         document.getElementById("loginfailed").innerText = "Invalid username or password!";

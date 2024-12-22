@@ -4,8 +4,6 @@ let rand1 = Math.floor(Math.random() * 10);
 let rand2 = Math.floor(Math.random() * 10);
 let rand3 = Math.floor(Math.random() * 10);
 let rand4 = Math.floor(Math.random() * 10);
-console.warn(rand1, rand2, rand3, rand4);
-console.log(typeof(rand1));
 
 function game(event) {
     event.preventDefault();
@@ -37,14 +35,33 @@ function game(event) {
         }
     });
 
-    done = ['V', 'V', 'V', 'V'];
-    console.error("done : ", done)
+    let done = ['V', 'V', 'V', 'V'];
+    console.error("done : ", done);
     console.error("verfy : ", verfy);
 
     if (JSON.stringify(verfy) === JSON.stringify(done)) {
         console.log("Congratulations! You won!");
-        alert("Congratulations! You won!");
+        window.location.reload();
     } else {
         console.log("Keep trying!");
     }
 }
+
+// Restrict input to digits only and move to the next input field on "Enter"
+document.querySelectorAll('.inputs input').forEach((input, index, inputs) => {
+    input.addEventListener('input', function() {
+        // Ensure only a single digit is entered
+        if (this.value.length > 1) {
+            this.value = this.value.slice(0, 1);
+        }
+    });
+
+    input.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+            // Focus the next input field if 'Enter' is pressed
+            if (index < inputs.length - 1) {
+                inputs[index + 1].focus();
+            }
+        }
+    });
+});
