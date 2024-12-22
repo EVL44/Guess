@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: 1px solid black;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #efefef;
+}
+
+.footer {
+    border: 1px solid black;
+    height: 9.5vh;
+    display: flex;
+    justify-content: center;
+    font-family: "Geist Mono", monospace;
+    align-items: center;
+}
+
+.signup {
+    border: 1px solid black;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 70px;
+    border-radius: 15px;
+    width: 250px;
+}
+
+.signup h1 {
+    color:  rgb(68, 140, 212);
+    font-size: x-large;
+    font-family: "Geist Mono", monospace;
+    margin-bottom: 30px;
+}
+
+.signup form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup form a {
+    font-family: "Kanit", sans-serif;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.signup form a:hover {
+    text-decoration: underline;
+    color: rgb(42, 5, 117);
+}
+
+.input-f {
+    font-family: "Kanit", sans-serif;
+    background-color: #efefef;
+    margin-bottom: 20px;
+    max-width: 190px;
+    height: 20px;
+    padding: 10px;
+    /* text-align: center; */
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+  
+  .input-f:focus {
+    color: rgb(68, 140, 212);
+    background-color: #efefef;
+    outline-color: rgb(68, 140, 212);
+    box-shadow: -3px -3px 15px rgb(68, 140, 212);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+
+.signupbtn {
+    background-color: rgb(68, 140, 212);
+    font-family: "Kanit", sans-serif;
+    color: white;
+     border: 1px solid rgb(68, 140, 212);
+    border-radius: 10px;
+    padding: 10px 50px;
+    transition: 0.5ms;
+}
+
+.signupbtn:hover {
+    background-color: white;
+    font-family: "Kanit", sans-serif;
+    color: rgb(68, 140, 212);
+    border: 1px solid rgb(68, 140, 212);
+}

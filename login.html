@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <h1 id="txt1">Login</h1>
+            <form method="post">
+                <p id="loginfailed"></p>
+                <input type="text" id="loginusername" placeholder="username" class="input-f" required>
+                <input type="password" id="loginpassword" placeholder="password" class="input-f" required> 
+                <a href="./signup.html">you dont have an account?</a>
+                <button type="button" onclick="login(event)" class="loginbtn"> Submit </button> 
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        all rights by EVL44 Copyright &copy 2024.
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
